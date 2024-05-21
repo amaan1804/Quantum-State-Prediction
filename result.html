@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+
+        .result-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .result-container p {
+            margin-bottom: 10px;
+            color: #000000;
+        }
+
+        strong {
+            color: #11bf3cd1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quantum State Prediction Result</h1>
+    <div class="result-container">
+        <p><strong>Input Value of x:</strong> {{ x }}</p>
+        <p><strong>Calculated Wavefunction:</strong> {{ wavefunction }}</p>
+        <p><strong>Predicted Quantum State:</strong> {{ predicted_state }}</p>
+        <p><strong>Calculated Eigen Energy:</strong> {{ eigen_energy }}</p>
+        <p><strong>Calculated Probability Density:</strong> {{ prob_density }}</p>
+    </div>
+</body>
+</html>
